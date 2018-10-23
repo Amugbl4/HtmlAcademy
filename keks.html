@@ -92,6 +92,39 @@
         <h2>Популярные товары</h2>
         <a href="#" class="btn" title="Посмотреть все товары"></a>
         <div class="popular-items">
+            <h2>Прайс-лист на услуги</h2>
+            <table class="price-list">
+                <tr>
+                    <th class="price-number">№</th>
+                    <th>Название услуги</th>
+                    <th>Кто оказывает</th>
+                    <th>Сколько стоит</th>
+                </tr>
+                <tr>
+                    <td class="price-number">1</td>
+                    <td class="price-name">Стрижка</td>
+                    <td>Грумер</td>
+                    <td>500 руб.</td>
+                </tr>
+                <tr>
+                    <td class="price-number">2</td>
+                    <td class="price-name">Заточка когтей</td>
+                    <td>Грумер</td>
+                    <td>300 руб.</td>
+                </tr>
+                <tr>
+                    <td class="price-number">3</td>
+                    <td class="price-name">Накрутка усов</td>
+                    <td>Грумер</td>
+                    <td>100 руб.</td>
+                </tr>
+                <tr>
+                    <td class="price-number">4</td>
+                    <td class="price-name">Подбор аксессуаров</td>
+                    <td>Стилист</td>
+                    <td>1550 руб.</td>
+                </tr>
+            </table>
             <div class="catalog-item">
                 <img src="img/glasses-1.jpg" alt="очки «Классика жанра»" width="306" height="206">
                 <h3>Очки «Классика жанра»</h3>
@@ -116,6 +149,43 @@
                 <a href="#" class="btn">Купить</a>
             </div>
         </div>
+    </div>
+    <div class="feedback">
+        <h2>Остались вопросы?</h2>
+        <p class="feedback-tip">Свяжитесь с нами, и мы развеем оставшиеся у вас сомнения!</p>
+        <form action="/keks-mail" class="feedback-form" method="POST">
+            <div class="feedback-form-group">
+                <label for="fullname-filed">Представьтесь, пожалуйста:</label>
+                <input type="text" name="fullname" id="fullname-filed">
+            </div>
+            <div class="feedback-form-group">
+                <label for="phone-filed">Контактный телефон:</label>
+                <input type="phone" name="phone" id="phone-field">
+            </div>
+            <div class="feedback-form-group">
+                <label for="email-field">Электронная почта:</label>
+                <input type="email" name="email" id="email-field">
+            </div>
+            <div class="checkbox-area">
+                <label>
+                    <input type="checkbox" name="subscription">
+                    Я согласен получать спам  смс на телефон
+                </label>
+            </div>
+            <div class="feedback-form-group">
+                <label for="topic-select">Тема обращения:</label>
+                <select name="topic" id="topic-select">
+                    <option value="1">Условия доставки</option>
+                    <option value="2">Возврат товара</option>
+                    <option value="3">Жалоба в Роспотребнадзор</option>
+                </select>
+            </div>
+            <div class="feedback-for-group">
+                <label for="message-area">Текст обращения</label>
+                <textarea name="message" id="message-area" cols="30" rows="5" placeholder="Введите текст обращения"></textarea>
+            </div>
+            <input type="submit" class="btn" value="Отправить">
+        </form>
     </div>
     <div class="page-footer">
         <div class="footer-top">
