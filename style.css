@@ -15,6 +15,24 @@ body {
     padding: 10px;
 }
 
+.page-header {
+    background-image: url(img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.feature-choice {
+    background: url(img/feature-1.png) no-repeat top center;
+}
+
+.feature-quality {
+    background: url(img/feature-2.png) no-repeat top center;
+}
+
+.feature-safety {
+    background: url(img/feature-3.png) no-repeat top center;
+}
 .main-nav {
     list-style: none;
 }
@@ -127,7 +145,7 @@ body {
     font-size: 16px;
 }
 
-.cat-reference dd img {
+.cat-reference img {
     border-radius: 5px;
 }
 
